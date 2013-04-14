@@ -46,16 +46,20 @@
             this.p3s = new System.Windows.Forms.Label();
             this.p4s = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.answer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.p4s);
             this.panel1.Controls.Add(this.p3s);
             this.panel1.Controls.Add(this.p2s);
@@ -238,6 +242,28 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.answer);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 288);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(734, 43);
+            this.panel7.TabIndex = 13;
+            // 
+            // answer
+            // 
+            this.answer.BackColor = System.Drawing.Color.Black;
+            this.answer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer.ForeColor = System.Drawing.Color.White;
+            this.answer.Location = new System.Drawing.Point(0, 0);
+            this.answer.Name = "answer";
+            this.answer.Size = new System.Drawing.Size(734, 43);
+            this.answer.TabIndex = 1;
+            this.answer.Text = "Answer:";
+            this.answer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Score
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +284,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,5 +309,7 @@
         private System.Windows.Forms.Label p2s;
         private System.Windows.Forms.Label p1s;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label answer;
     }
 }

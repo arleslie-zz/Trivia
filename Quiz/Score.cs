@@ -17,13 +17,14 @@ namespace WindowsFormsApplication1
         public int time = 5;
         public int players;
         public string file;
-        public Score(string answer, string file2, int players2, string points2 = "0,0,0 0")
+        public Score(string answer2, string file2, int players2, string points2 = "0,0,0 0")
         {
             InitializeComponent();
             points = points2;
             file = file2;
             players = players2;
             seconds.Visible = false;
+            answer.Text = "The answer was: " + answer2;
         }
 
         private void Score_Load(object sender, EventArgs e)
