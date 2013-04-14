@@ -68,8 +68,15 @@
             // 
             this.players.Location = new System.Drawing.Point(112, 11);
             this.players.Name = "players";
+            this.players.ReadOnly = true;
             this.players.Size = new System.Drawing.Size(35, 20);
             this.players.TabIndex = 4;
+            this.players.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.players.MouseClick += new System.Windows.Forms.MouseEventHandler(this.players_MouseClick);
             // 
             // file
             // 
