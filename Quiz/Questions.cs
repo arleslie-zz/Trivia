@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
         public string answer;
         public string file;
         public string points;
-        public Questions(int players2, string file2, string points2 = "0, 0, 0, 0")
+        public Questions(int players2, string file2, string points2 = "0,0,0,0")
         {
             InitializeComponent();
             players = players2;

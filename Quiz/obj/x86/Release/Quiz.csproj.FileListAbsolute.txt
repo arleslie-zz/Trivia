@@ -1,0 +1,9 @@
+F:\[Sources]\Trivia\Trivia\Quiz\bin\Release\Quiz.exe
+F:\[Sources]\Trivia\Trivia\Quiz\bin\Release\Quiz.pdb
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\WindowsFormsApplication1.Questions.resources
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\WindowsFormsApplication1.Score.resources
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\WindowsFormsApplication1.Start.resources
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\Quiz.csproj.GenerateResource.Cache
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\Quiz.exe
+F:\[Sources]\Trivia\Trivia\Quiz\obj\x86\Release\Quiz.pdb

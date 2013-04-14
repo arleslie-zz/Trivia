@@ -47,9 +47,14 @@ namespace WindowsFormsApplication1
             file.DataSource = files.ToArray();
         }
 
-        private void players_MouseClick(object sender, MouseEventArgs e)
+        private void players_ValueChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Feature coming soon.", "Not Implmented", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (players.Value != 4)
+            {
+                MessageBox.Show("Feature coming soon.", "Not Implmented", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            players.Value = 4;
         }
     }
 }

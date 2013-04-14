@@ -72,11 +72,11 @@
             this.players.Size = new System.Drawing.Size(35, 20);
             this.players.TabIndex = 4;
             this.players.Value = new decimal(new int[] {
-            2,
+            4,
             0,
             0,
             0});
-            this.players.MouseClick += new System.Windows.Forms.MouseEventHandler(this.players_MouseClick);
+            this.players.ValueChanged += new System.EventHandler(this.players_ValueChanged);
             // 
             // file
             // 

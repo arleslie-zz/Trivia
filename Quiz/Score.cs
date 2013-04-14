@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         public int time = 5;
         public int players;
         public string file;
-        public Score(string answer, string file2, int players2, string points2 = "0, 0, 0, 0")
+        public Score(string answer, string file2, int players2, string points2 = "0,0,0 0")
         {
             InitializeComponent();
             points = points2;
@@ -28,11 +28,12 @@ namespace WindowsFormsApplication1
 
         private void Score_Load(object sender, EventArgs e)
         {
-            string[] listpoints = points.Split(", ".ToCharArray());
+            string[] listpoints = points.Split(",".ToCharArray());
             p1s.Text = listpoints[0];
             p2s.Text = listpoints[1];
             p3s.Text = listpoints[2];
             p4s.Text = listpoints[3];
+           
         }
 
         private void Score_Resize(object sender, EventArgs e)
@@ -58,11 +59,6 @@ namespace WindowsFormsApplication1
         private void Score_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        public static bool IsOdd(int value)
-        {
-            return value % 2 != 0;
         }
 
         private void p1_Click(object sender, EventArgs e)
@@ -96,17 +92,17 @@ namespace WindowsFormsApplication1
         {
             if (place == 1)
             {
-                temp = int.Parse(p1s.Text) + 10;
+                temp = int.Parse(p2s.Text) + 10;
                 p2s.Text = temp.ToString();
             }
             else if (place == 2)
             {
-                temp = int.Parse(p1s.Text) + 7;
+                temp = int.Parse(p2s.Text) + 7;
                 p2s.Text = temp.ToString();
             }
             else if (place == 3)
             {
-                temp = int.Parse(p1s.Text) + 5;
+                temp = int.Parse(p2s.Text) + 5;
                 p2s.Text = temp.ToString();
             }
             else if (place == 4)
@@ -123,17 +119,17 @@ namespace WindowsFormsApplication1
         {
             if (place == 1)
             {
-                temp = int.Parse(p1s.Text) + 10;
+                temp = int.Parse(p3s.Text) + 10;
                 p3s.Text = temp.ToString();
             }
             else if (place == 2)
             {
-                temp = int.Parse(p1s.Text) + 7;
+                temp = int.Parse(p3s.Text) + 7;
                 p3s.Text = temp.ToString();
             }
             else if (place == 3)
             {
-                temp = int.Parse(p1s.Text) + 5;
+                temp = int.Parse(p3s.Text) + 5;
                 p3s.Text = temp.ToString();
             }
             else if (place == 4)
@@ -150,17 +146,17 @@ namespace WindowsFormsApplication1
         {
             if (place == 1)
             {
-                temp = int.Parse(p1s.Text) + 10;
+                temp = int.Parse(p4s.Text) + 10;
                 p4s.Text = temp.ToString();
             }
             else if (place == 2)
             {
-                temp = int.Parse(p1s.Text) + 7;
+                temp = int.Parse(p4s.Text) + 7;
                 p4s.Text = temp.ToString();
             }
             else if (place == 3)
             {
-                temp = int.Parse(p1s.Text) + 5;
+                temp = int.Parse(p4s.Text) + 5;
                 p4s.Text = temp.ToString();
             }
             else if (place == 4)
