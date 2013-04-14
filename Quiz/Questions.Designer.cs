@@ -317,11 +317,13 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Questions";
             this.Text = "Questions";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Questions_FormClosing);
             this.Load += new System.EventHandler(this.Questions_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Questions_KeyDown);
             this.Resize += new System.EventHandler(this.Questions_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

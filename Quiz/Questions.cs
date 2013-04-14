@@ -82,5 +82,15 @@ namespace WindowsFormsApplication1
                 this.Dispose();
             }
         }
+
+        private void Questions_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.N)
+            {
+                Form questions2 = new Questions(players, file, points);
+                questions2.Show();
+                this.Dispose();
+            }
+        }
     }
 }
