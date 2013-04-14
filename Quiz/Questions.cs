@@ -75,7 +75,7 @@ namespace WindowsFormsApplication1
             time = time - 1;
             timeDisplay.Text = time.ToString() + " Seconds";
 
-            if (time == 14)
+            if (time == 0)
             {
                 Form score = new Score(answer, file, players, points);
                 score.Show();
